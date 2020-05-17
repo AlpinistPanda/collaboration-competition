@@ -3,9 +3,9 @@
 My agents succeded to meet the criteria around 6k episodes.
 
 I have included a plot of one of the training
-![Best Model Score](./bestmodel_score.png)
+![Result](./result.png)
 
-you can plot the graph using plot function
+you can use the function to view the model
 ``` bash
 python view.py
 ```
@@ -20,9 +20,26 @@ actor and critic share hidden layers.
 
 After fixed steps update of multi agent environment, actor and critic are
 mini-batch updated by PPO/GAE.
-
 I used my algorithm from the previous project even though there was a better
 suited one DDPG.
+
+
+**Why I choose the particular algorithm?**
+I used it because it was a familiar algorithm. It was able to solve the problem
+within the restrictions.
+
+**Did you used replay buffer, epsilon-greedy, etc approaches? (Also are both agents sharing same experience buffer or different)**
+My agents share the same buffer.
+
+**Is the noise added to agents?**
+For agents there is noise on action.
+
+**Why you have chosen these particular hyperparameters (like you took from the paper, or result of your own experimentation)?**
+The hyperparameters are chosen with some series of experimentation. However,
+I believe it might not be the optimal solution.
+
+**Why you chose the particular model architecture for Actor/Critic?**
+I prefered simple to implement method.
 
 Hidden layers for the model  
 
