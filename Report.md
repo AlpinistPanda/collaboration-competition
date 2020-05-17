@@ -91,6 +91,9 @@ optimal parameters in the balance between exploration and exploitation.
   PPO/GAE algorithm was not very successful in this example. I want to
   try different approaches such as DDPG.
 
-- **Better suited algorithm for Multi-Agent environment**  
-  PPO/GAE is not the best when it comes to Multi-Agent. For multi agents
-  scenario there can be better approach.
+- With the help of my reviewer I noted following possible future updates:
+- Use parameter space noise rather than noise on action. https://vimeo.com/252185862https://github.com/jvmancuso/ParamNoise
+- We can use prioritised experience buffer. https://github.com/Damcy/prioritized-experience-replay
+- Different replay buffer for actor/critic
+- Try adding dropouts in critic network
+- Turn off OU noise and use random noise
